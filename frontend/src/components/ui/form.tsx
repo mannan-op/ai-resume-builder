@@ -71,7 +71,10 @@ export function FormLabel({
 }: React.LabelHTMLAttributes<HTMLLabelElement>): React.JSX.Element {
   return (
     <label
-      className={["text-sm font-medium text-gray-200", className]
+      className={[
+        "text-sm font-medium text-slate-700 dark:text-gray-200",
+        className,
+      ]
         .filter(Boolean)
         .join(" ")}
       {...props}

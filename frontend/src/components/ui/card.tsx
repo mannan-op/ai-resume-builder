@@ -5,7 +5,10 @@ interface DivProps extends React.HTMLAttributes<HTMLDivElement> {}
 export function Card({ className, ...props }: DivProps): React.JSX.Element {
   return (
     <div
-      className={["rounded-xl border bg-gray-900 text-white shadow", className]
+      className={[
+        "rounded-xl border bg-white text-slate-900 dark:bg-gray-900 dark:text-white shadow",
+        className,
+      ]
         .filter(Boolean)
         .join(" ")}
       {...props}
